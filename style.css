@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .qualification, .skills,.contact, footer{
+.about, .qualification, .skills, .interest, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -250,17 +250,31 @@ section .title::after{
     font-size: 17px;
     text-align: justify;
 }
-.qualification .title::after{
+
+.qualification, .interest{
+    color:#fff;
+    background: #111;
+}
+.qualification .title::before,
+.interest .title::before{
+    background: #fff;
+}
+.qualification .title::after,
+.interest .title::after{
+    background: #111;
     content: "My journey";
 }
 .qualification .qual-content .card{
     width: calc(33% - 20px);
-    background: #ffa500;
+    background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+.qualification .qual-content .card:hover{
+    background: orange;
 }
 
 .qualification .qual-content .card .box{
@@ -271,11 +285,11 @@ section .title::after{
 }
 .qualification .qual-content.card i{
     font-size: 50px;
-    color: orange;
+    color: #000;
     transition: color 0.3s ease;
 }
 .qualification .qual-content .card:hover i{
-    color: #fff;
+    color: #000;
 }
 .qualification .qual-content .card .text{
     font-size: 25px;
@@ -340,7 +354,48 @@ section .title::after{
 .skills-content .right .mysql::before{
     width: 70%;
 }
-
+/* teams section styling */
+.interest .title::after{
+    content: "I love to do these";
+}
+.interest .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.interest .carousel .card:hover{
+    background: orange;
+}
+.interest .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.interest .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.interest .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.interest .carousel .card img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px;
+    background: #FFA500;
+    transition: all 0.3s ease;
+}
+.interest .carousel .card:hover img{
+    border-color: #fff;
+}
 
 
 /* contact section styling */
