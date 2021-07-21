@@ -300,7 +300,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "what i know";
+    content: "what i have in me";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -311,7 +311,99 @@ section .title::after{
     margin-bottom: 10px;
 }
 
+.skills .skills-content .left .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .left .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .left span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .left .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .left .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: orange;
+}
+.skills-content .left .hardwork::before{
+    width: 95%;
+}
+.skills-content .left .creativity::before{
+    width: 80%;
+}
+.skills-content .left .communication::before{
+    width: 70%;
+}
+.skills-content .left .enthusiasm::before{
+    width: 80%;
+}
+.skills-content .left .leadership::before{
+    width: 85%;
+}
 
+.skills .skills-content .left .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .left .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .left span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .left .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .left .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: orange;
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .right .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills-content .right .html::before{
+    width: 75%;
+}
+.skills-content .right .css::before{
+    width: 60%;
+}
+.skills-content .right .js::before{
+    width: 50%;
+}
+.skills-content .right .php::before{
+    width: 50%;
+}
+.skills-content .right .mysql::before{
+    width: 70%;
+}
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
@@ -339,21 +431,6 @@ section .title::after{
     top: 0;
     background: orange;
 }
-.skills-content .right .html::before{
-    width: 75%;
-}
-.skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
-    width: 50%;
-}
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
-    width: 70%;
-}
 /* teams section styling */
 .interest .title::after{
     content: "I love to do these";
@@ -368,6 +445,7 @@ section .title::after{
 }
 .interest .carousel .card:hover{
     background: orange;
+
 }
 .interest .carousel .card .box{
     display: flex;
@@ -380,6 +458,7 @@ section .title::after{
     transform: scale(1.05);
 }
 .interest .carousel .card .text{
+    
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
