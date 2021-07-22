@@ -119,8 +119,6 @@ section .title::after{
     color: #fff;
 }
 
-
-
 /* menu btn styling */
 .menu-btn{
     color: #fff;
@@ -155,6 +153,7 @@ section .title::after{
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
+
 /* home section styling */
 .home{
     display: flex;
@@ -189,7 +188,6 @@ section .title::after{
     color: orange;
     font-weight: 500;
 }
-
 .home .home-content a{
     display: inline-block;
     background: orange;
@@ -276,7 +274,6 @@ section .title::after{
 .qualification .qual-content .card:hover{
     background: orange;
 }
-
 .qualification .qual-content .card .box{
     transition: all 0.3s ease;
 }
@@ -310,7 +307,6 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
-
 .skills .skills-content .left .bars{
     margin-bottom: 15px;
 }
@@ -353,7 +349,6 @@ section .title::after{
 .skills-content .left .leadership::before{
     width: 85%;
 }
-
 .skills .skills-content .left .bars{
     margin-bottom: 15px;
 }
@@ -398,11 +393,11 @@ section .title::after{
 .skills-content .right .js::before{
     width: 50%;
 }
-.skills-content .right .php::before{
+.skills-content .right .java::before{
     width: 50%;
 }
 .skills-content .right .mysql::before{
-    width: 70%;
+    width: 65%;
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
@@ -431,6 +426,7 @@ section .title::after{
     top: 0;
     background: orange;
 }
+
 /* teams section styling */
 .interest .title::after{
     content: "I love to do these";
@@ -445,7 +441,6 @@ section .title::after{
 }
 .interest .carousel .card:hover{
     background: orange;
-
 }
 .interest .carousel .card .box{
     display: flex;
@@ -595,7 +590,6 @@ footer span a:hover{
         width: 350px;
     }
 }
-
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
@@ -661,15 +655,12 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-
-
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
     }
 }
-
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
